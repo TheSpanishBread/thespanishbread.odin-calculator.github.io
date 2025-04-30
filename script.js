@@ -48,9 +48,11 @@ sign.addEventListener("click",function(){
                 num1 = String(num1);
             break;
         case (total==""):
-            num2 = Number(num2);
-            num2 = num2 * -1;
-            num2 = String(num2);
+                if (operator == "+"){
+                    operator = "-";
+                }else{
+                    operator = "+";
+                }
         break;
         case (num1=="" && num2==""):
             total = Number(total);
