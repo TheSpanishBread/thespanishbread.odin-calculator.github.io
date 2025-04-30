@@ -1,0 +1,83 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    font-family: 'Century Gothic';
+    }
+main ,header{
+    display:flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    margin:10vh auto;
+    color: white;
+}
+#calculator{
+    display:flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    border:3px solid rgb(255, 140, 140);
+    justify-content: center;
+    align-items: center;
+    padding:2em;
+    gap:2vh;
+    
+    border-radius: 20px;
+}
+#display{
+    width: 100%;
+    border:2px solid white;
+    padding:1em;
+    height: 6em;
+    display:flex;
+    flex-direction: column;    
+    justify-content: end;
+    align-items: flex-end;
+    font-weight: bold;
+    gap:1em;
+    
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+#buttons{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+button{
+    width: 4.6em;
+    height: 5em;
+    font-size: 0.8em;
+    border:2px solid red;
+    background-color: unset;
+    border-radius: 2px;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+button:hover{
+    background-color: rgb(255, 179, 179);
+    color:black;
+}
+#zero{
+    width: 9.2em;
+}
+#operations{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+}
